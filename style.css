@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+/* body{
+    
+} */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* /////Header section///// */
+
+header {
+  max-width: 2000px;
+  width: 100%;
+  height: 10rem;
+  padding: 0 5rem;
+  /* border: 1px solid black; */
+}
+
+header div,
+nav {
+  flex: 1;
+  align-items: center;
+}
+
+header div p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.4239px;
+  line-height: 13px;
+  letter-spacing: 0.094663px;
+  color: #19cd00;
+  margin-left: 1rem;
+}
+
+header nav {
+  justify-content: flex-end;
+}
+
+header nav ul {
+  list-style: none;
+  gap: 1.5rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18.9px;
+  line-height: 28px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.177188px;
+
+  color: #000000;
+}
+
+.menu {
+  display: none;
+}
+
+/* Hero section */
+main {
+  padding: 0 5rem;
+}
+.hero {
+  max-width: 2000px;
+  width: 100%;
+  height: 721.74px;
+  left: 75.6px;
+  top: 126.39px;
+
+  background: #f9faff;
+}
+
+.heroContent,
+.heroImage {
+  flex: 1;
+  /* border: 1px solid black; */
+}
+
+.heroContent {
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  padding-left: 5rem;
+}
+
+.heroContent h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50.6576px;
+  line-height: 76px;
+  max-width: 420px;
+
+  color: #333333;
+}
+
+.heroContent p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.2474px;
+  line-height: 21px;
+
+  color: #4f4f4f;
+  max-width: 50rem;
+}
+
+.heroButtons {
+  gap: 2rem;
+}
+
+.heroButtons button {
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.heroButtons button:hover {
+  transform: scale(1.1);
+}
+
+.greenbtn {
+  width: 148.02px;
+  height: 53.05px;
+
+  /* brand green */
+
+  background: #19cd00;
+  border-radius: 6.3322px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.blackbtn {
+  width: 215.26px;
+  height: 53.12px;
+
+  background: #000000;
+  border: 0.885349px solid #000000;
+  border-radius: 7.08279px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.blackbtn ion-icon {
+  font-size: 1.5rem;
+}
+
+.blackbtn img {
+  width: 25.13px;
+  height: 28.96px;
+}
+
+.heroImage {
+  background: url(./g4.jpg);
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ///// About ///// */
+
+.about {
+  height: 500.74px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+}
+
+.about h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33.6411px;
+  line-height: 50px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.about p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  /* or 45px */
+  text-align: center;
+
+  color: #4f4f4f;
+  width: 80%;
+}
+
+/* ////How it works section///// */
+
+.downloadApp {
+  max-width: 1700px;
+  width: 100%;
+  margin: auto;
+}
+
+.how,
+.how2,
+.how3 {
+  display: flex;
+  height: 600px;
+}
+
+.how div,
+.how2 div,
+.how3 div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.how2 div:first-child {
+  padding-left: 15rem;
+}
+
+.how h3,
+.how2 h3,
+.how3 h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56.6623px;
+  line-height: 85px;
+
+  color: #333333;
+  max-width: fit-content;
+  margin-bottom: 3rem;
+}
+
+.how h3 {
+  max-width: 50rem;
+}
+.how p,
+.how2 p,
+.how3 p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.1358px;
+  line-height: 23px;
+
+  color: #4f4f4f;
+  margin-bottom: 3rem;
+  max-width: 50rem;
+}
+
+.howbtn button {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.howImage1 {
+  background: url(./phone1.jpg);
+  max-width: 80%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.howImage2 {
+  background: url(./carlos-muza-hpjSkU2UYSU-unsplash.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.howImage3 {
+  background: url(./domenico-loia-hGV2TfOh0ns-unsplash.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.howContent button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* frequently asked question */
+.freqAsked {
+  max-width: 2000px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  /* border: 1px solid black; */
+  padding: 2rem 0;
+  margin-top: 10rem;
+}
+
+.freqAsked h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.questions {
+  width: 700px;
+  border-bottom: 2px solid #ccc;
+  padding: 1rem;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.question ion-icon {
+  cursor: pointer;
+}
+
+.answer {
+  width: 50rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.15px;
+
+  /* black */
+
+  color: #181b36;
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+/* footer section */
+
+footer {
+  max-width: 2000px;
+  width: 100%;
+  height: 733.2px;
+  background: #181b36;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer_circle {
+  position: absolute;
+  top: -11rem;
+  left: -10rem;
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_circle2 {
+  position: absolute;
+  bottom: -11rem;
+  right: -10rem;
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstrow {
+  width: 90%;
+  height: 90%;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frow {
+  width: 90%;
+  height: 90%;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trow {
+  width: 90%;
+  height: 90%;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContent {
+  max-width: 1500px;
+  width: 100vw;
+  margin: auto;
+  height: 100%;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContent h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40.0384px;
+  line-height: 60px;
+  margin-bottom: 7rem;
+  color: #ffffff;
+}
+
+.listItems {
+  width: 100%;
+}
+
+.listItems div {
+  flex: 1;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.items:first-child {
+  gap: 3rem;
+  align-items: center;
+}
+
+.items:first-child ul {
+  list-style: none;
+}
+
+.items ul li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.5375px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.items:nth-child(2) {
+  text-align: left;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.items h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.9px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+.items:nth-child(2) span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.5375px;
+  line-height: 25px;
+
+  color: #ffffff;
+}
+
+.logoAndSocial {
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.logoAndSocial div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoAndSocial div:first-child img {
+  width: 41.34px;
+  height: 41.34px;
+}
+
+.logoAndSocial p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27.5628px;
+  line-height: 18px;
+  /* identical to box height, or 65% */
+
+  letter-spacing: 0.134328px;
+
+  /* brand green */
+
+  color: #19cd00;
+}
+.logoAndSocial div:nth-child(2) img {
+  width: 41.71px;
+  height: 41.71px;
+}
